@@ -1,0 +1,117 @@
+# CAO_PROJECT
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>CAO PROJECT</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/wingcss" />
+	<link rel="stylesheet" href="https://grahn.us/css/style.css" />
+	<script src="https://kit.fontawesome.com/42e67c05e1.js"></script>
+
+	<style type="text/css">
+		.col,
+		[class*=" col-"],
+		[class^=col-] {
+			margin: 1rem 5rem;
+		}
+
+	</style>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="multiplication.js"></script>
+	<script type="text/javascript" src="division.js"></script>
+	<script type="text/javascript" src="addition.js"></script>
+
+
+</head>
+
+<body>
+
+
+	<div class="container">
+		<h1 style="text-align: center;">TITLE : CELSIUS TO FAHRENHIT CONVERSION</h1>
+		<h2>Theory:</h2>
+		<br>
+		<h4>We in our project are performing celsius to fahrenhit conversion using binary artihtmetic.The formula to
+			convert celsius to fahrenhit is:<BR>
+			F={C*9/5}+32. </h4>
+
+		<h4>To perform this conversion using binary arithmetic we will use booth multiplier,restoring division and
+			binary division.For exapmle let us consider celsius C = 5.First we will convert all the decimal values
+			to binary values .Then according to the algorithm we put the values and run the simulation for booth
+			multipler.After that we go for resstoring divsion by put the values and run the simulation .Then at last
+			we perform the Binary Addition to get our desired result.</h4>
+		<h2>Steps Involved :</h2>
+		<h4>Step - I :</h4>
+		<H3>Booth Multipler</H3>
+		</h3>
+		<h1>Binary Multiplication Using Booth's Algorithm.</h1>
+		<h5>Enter any two integer numbers into the form and click 'Multiply' .</h5>
+
+		<div class="row">
+			<div class="col" style = "display: inline-block;">
+				<form style = "vertical-align: top">
+					<input type="text" name="factor1" value="" /> x
+					<input type="text" name="factor2" value="9" />
+					<input type="submit" name="multiply" value="Multiply" />
+				</form>
+			</div>
+			<div class="col" style = "display: inline-block; vertical-align: top;">
+				<table id="results" class="table">
+					<thead>
+						<tr>
+							<th>A</th>
+							<th>Q</th>
+							<th>Q<sub>-1</sub></th>
+							<th>M</th>
+							<th>Operation</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="container" style = "margin-left: 0;">
+				<H3>Step-II :</H3>
+				<h3>Restoring Division</h3>
+				<h1>Now we are going to perform Restoring division.</h1>
+				<h5>Enter any two positive number and click on divide to see what's happen !</h5>
+				<div class="row">
+					
+					<form style = "display: inline-block; padding-left: 10px;">
+						<input type="text" name="factor3" value="" /> /
+						<input type="text" name="factor4" value="5" />
+						<button type="button" onclick=result()>Divide</button>
+					</form>
+				</div>
+				<div class="col" style = "display: inline-block; margin-left: 0px;">
+					<table id="dvd" class="table">
+					</table>
+
+					<div class="container" style = "margin-left: 0px;">
+						<H3>Step-III :</H3>
+						<h3>BINARY ADDITION</h3>
+						<h1>Now we are going to perform Binary Adiition.</h1>
+						<h5>Enter any two positive number and click on add to see what's happen !</h5>
+
+						<h1>Binary Addition</h1>
+						<label for="decimal1">Enter Decimal Number 1: </label>
+						<input type="number" id="decimal1" placeholder="Decimal number 1"><br><br>
+						<label for="decimal2">Enter Decimal Number 2: </label>
+						<input type="number" id="decimal2" placeholder="Decimal number 2" value = "32"><br><br>
+						<button id="addBinaryButton" onclick=add()>Add Binary</button><br><br>
+						<p id="result"></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>
